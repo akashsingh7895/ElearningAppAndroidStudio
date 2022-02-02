@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridParentLayout"
+
+        android:background="@drawable/rounded_corner_bacgkround_white"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/layoutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="YT LIVE"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/viewAllBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:text="View All"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridProductLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:columnCount="2"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTitle">
+
+
+        <include
+            layout="@layout/grid_itrm_layout"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/grid_itrm_layout"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/grid_itrm_layout"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/grid_itrm_layout"
+            app:layout_columnWeight="1" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/gray"
+        app:layout_constraintLeft_toLeftOf="@id/gridProductLayout"
+        app:layout_constraintRight_toRightOf="@id/gridProductLayout"
+        app:layout_constraintBottom_toBottomOf="@id/gridProductLayout"
+        app:layout_constraintTop_toTopOf="@id/gridProductLayout"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintLeft_toLeftOf="@id/gridProductLayout"
+        app:layout_constraintRight_toRightOf="@id/gridProductLayout"
+        app:layout_constraintBottom_toBottomOf="@id/gridProductLayout"
+        app:layout_constraintTop_toTopOf="@id/gridProductLayout"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+

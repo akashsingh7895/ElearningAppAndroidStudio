@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hathraswarrior">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HathrasWarrior">
+        <activity
+            android:name=".activites.UpdateUserProfileActivity"
+            android:exported="true"
+            android:theme="@style/NoActionBarTheme"/>
+        <activity
+            android:name=".activites.DeliveryActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activites.CategoryActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activites.ProductDetailActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activites.VIewAllActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activites.AuthActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"></activity>
+        <activity
+            android:name=".activites.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"></activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_fgMykSh3MYdvGk" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

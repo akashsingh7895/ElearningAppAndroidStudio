@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "60167180355",
+    "project_id": "hathraswarrior",
+    "storage_bucket": "hathraswarrior.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60167180355:android:76c6cbd3475f81afa584f6",
+        "android_client_info": {
+          "package_name": "com.example.hathraswarrior"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60167180355-nh5mb4n9lotld6p74nual6ae9abq38tr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlOc7sHqCVFQmv8gPGLzB68oa92qqpw4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60167180355-nh5mb4n9lotld6p74nual6ae9abq38tr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

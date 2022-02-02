@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon_image"
+        android:title="Home"/>
+
+    <group
+        android:id="@+id/group">
+
+
+
+   <item
+       android:id="@+id/productPurchased"
+       android:title="Product Purchased">
+       <menu>
+          <item
+              android:id="@+id/nav_courses"
+              android:title="My Courses"
+              android:icon="@drawable/my_courses_icon_image"/>
+
+           <item
+               android:id="@+id/nav_motes"
+               android:title="My Notes"
+               android:icon="@drawable/notes_icon_image"/>
+
+           <item
+               android:id="@+id/nav_test"
+               android:title="My Tests"
+               android:icon="@drawable/test_icon_image"/>
+
+           <item
+               android:id="@+id/nav_myAccount"
+               android:title="My Account"
+               android:icon="@drawable/account_icon_image"/>
+
+           <item
+               android:id="@+id/nav_notification"
+               android:title="My Notification"
+               android:icon="@drawable/notification_icon_image"/>
+
+       </menu>
+
+
+
+   </item>
+
+    </group>
+
+
+    <group
+        android:id="@+id/group1">
+
+
+
+
+    <item
+        android:id="@+id/nav_shareApp"
+        android:icon="@drawable/share_icon_image"
+        android:title="Share this app"/>
+
+    <item
+        android:id="@+id/nav_helpline"
+        android:icon="@drawable/support_icon_image"
+        android:title="Helpline"/>
+
+    <item
+        android:id="@+id/nav_youtube"
+        android:icon="@drawable/youtube_icon_image"
+        android:title="YT Channel"/>
+
+     <item
+        android:id="@+id/nav_telegram"
+        android:icon="@drawable/telegram_icon_image"
+        android:title=" Join Telegram"/>
+
+    <item
+        android:id="@+id/nav_aboutUs"
+        android:icon="@drawable/info_icon_image"
+        android:title="About Us"/>
+
+    </group>
+
+    <group
+        android:id="@+id/group2">
+    <item
+        android:id="@+id/nav_sign_out"
+        android:icon="@drawable/sign_out_icon_image"
+        android:title="Log Out"/>
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+
+    >
+
+    <ImageView
+        android:id="@+id/prodImageView"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/prodTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Product Title"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prodImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prodSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="product Subtitle"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/prodTitle"
+        app:layout_constraintStart_toStartOf="@+id/prodTitle"
+        app:layout_constraintTop_toBottomOf="@+id/prodTitle" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:background="@drawable/rounded_corner_bacgkround_white"
+        android:backgroundTint="@color/darkGreen"
+        app:layout_constraintLeft_toLeftOf="@id/prodSubtitle"
+        app:layout_constraintTop_toBottomOf="@id/prodSubtitle"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.0"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:src="@drawable/star_icon"
+            app:tint="@color/white"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/prodActPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="3000/-"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/prodPrice"
+        app:layout_constraintStart_toEndOf="@+id/prodPrice"
+        app:layout_constraintTop_toTopOf="@+id/prodPrice" />
+
+
+    <TextView
+        android:id="@+id/prodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2599/-"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/prodSubtitle" />
+
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintLeft_toLeftOf="@id/prodActPrice"
+        app:layout_constraintRight_toRightOf="@id/prodActPrice"
+        app:layout_constraintTop_toTopOf="@id/prodActPrice"
+        app:layout_constraintBottom_toBottomOf="@id/prodActPrice"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#10000000"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
